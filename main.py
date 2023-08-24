@@ -27,7 +27,7 @@ class PongGame(Widget):
     player2 = ObjectProperty(None)
 
     def serve_ball(self):
-        self.ball.velocity = Vector(10, 0).rotate(randint(0, 360))
+        self.ball.velocity = Vector(15, 0).rotate(randint(0, 360))
 
     def update(self, dt):
         self.ball.move()
